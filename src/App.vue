@@ -1,0 +1,34 @@
+<template>
+  <div id="app" class="add-container">
+    <mynavbar></mynavbar>
+    <router-view/>
+<!--    <myfootbar></myfootbar>-->
+  </div>
+</template>
+
+<script>
+import mynavbar from './components/nav/header.vue'
+import myfootbar from './components/nav/footer.vue'
+
+export default {
+  name: "App",
+  components: {
+    mynavbar,
+    myfootbar
+  }
+};
+</script>
+<style>
+.add-container {
+  margin-bottom: 20px;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+}
+</style>
