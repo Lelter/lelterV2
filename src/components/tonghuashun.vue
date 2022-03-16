@@ -17,14 +17,16 @@ export default {
   },
   methods: {
     myecharts() {
-      let url = `https://graph.bwequation.com/api/v1/sensortower/app/download/flush`
+      let url = `http://localhost/My/test.php`
       let time=new Date()
       let nowTime = Date.parse(time)
       let lastYearTime=time.setFullYear(time.getFullYear()-1)
       let params={"start_date":lastYearTime,"end_date":nowTime,"app_ids":["303191318"],"countries":["CN"],"categories":[6015]}
-      axios.post('/sensortower/app/download/flush',params).then(result => {
+      axios.post(url,params).then(result => {
         var myChart = this.$echarts.init(document.getElementById('main'));
+        console.log(result)
         let data1 = result.data.data
+        console.log(data1)
         for (let i = 0; i < data1.length; i++) {
           data1[i][0] = data1[i][0] * 1000
         }
