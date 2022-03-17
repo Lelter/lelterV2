@@ -25,7 +25,6 @@ Vue.use(VXETable)
 Vue.use(VXEUtils, XEUtils, {mounts: ['cookie']})
 Vue.prototype.$axios = axios
 Vue.prototype.$echarts = echarts
-
 // axios.defaults.baseURL = '/api';// 配置接口地址
 axios.defaults.baseURL = apiConfig.baseUrl;// 配置接口地址
 axios.defaults.withCredentials = false;

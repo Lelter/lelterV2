@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     myecharts() {
-      let url = `http://localhost/My/test.php`
+      let url = `http://101.35.153.165/test.php`
       let time=new Date()
       let nowTime = Date.parse(time)
       let lastYearTime=time.setFullYear(time.getFullYear()-1)
