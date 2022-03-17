@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import oneTimeLoad from '@/components/oneTimeLoad'
 import PageLoad from '@/components/PageLoad'
 import test from '@/components/test'
@@ -10,7 +9,7 @@ import tonghuashun from '@/components/tonghuashun'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',   // 模式，默认hash
+  // mode: 'history',   // 模式，默认hash
   base: '/dist', // 基础路径
   routes: [
 
