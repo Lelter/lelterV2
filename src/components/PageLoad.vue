@@ -8,10 +8,10 @@
     >
       <!--将表单放在工具栏中-->
       <template #toolbar_buttons>
-        <vxe-radio-group v-model="fenlei" :strict="false">
-          <vxe-radio label="1" content="行业分类"></vxe-radio>
-          <vxe-radio label="2" content="概念分类"></vxe-radio>
-        </vxe-radio-group>
+<!--        <vxe-radio-group v-model="fenlei" :strict="false">-->
+<!--          <vxe-radio label="1" content="行业分类"></vxe-radio>-->
+<!--          <vxe-radio label="2" content="概念分类"></vxe-radio>-->
+<!--        </vxe-radio-group>-->
         <vxe-form :data="formData" @submit="searchEvent" @reset="resetEvent">
 
           <vxe-form-item field="gnname">
@@ -203,6 +203,19 @@ export default {
             }
           },
           {
+            field: "紫色条件",
+            title: "紫色条件",
+            type: "html",
+            width: "150",
+            sortable: true
+          },
+          {
+            field: "条件满足",
+            title: "条件满足",
+            minWidth: 160,
+            sortable: true
+          },
+          {
             field: "估值大小",
             title: "估值大小",
             type: "html",
@@ -225,7 +238,7 @@ export default {
           },
           {field: "所在地区", title: "所在地区", type: "html", width: "150"},
           {field: "tradeday", title: "交易日期", type: "html", width: "150"},
-          {field: "行业", title: "行业", type: "html", width: "150"},
+          {field: "行业_通达信", title: "行业", type: "html", width: "150"},
           {
             field: "市净率",
             title: "市净率",
@@ -576,19 +589,7 @@ export default {
             width: "400",
             sortable: true
           },
-          {
-            field: "紫色条件",
-            title: "紫色条件",
-            type: "html",
-            width: "150",
-            sortable: true
-          },
-          {
-            field: "条件满足",
-            title: "条件满足",
-            minWidth: 160,
-            sortable: true
-          }
+
         ] //表头
       }
     };

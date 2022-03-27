@@ -50,13 +50,13 @@ export default {
             }
           },
           dataset: {
-            dimensions: ['time', '下载数量', '上证指数'],
+            dimensions: ['time', 'rank', '上证指数'],
             source: data1,
 
 
           },
           legend: {
-            data: ['下载数量', '上证指数']
+            data: ['rank', '上证指数']
           },
           tooltip: {
             trigger: 'axis',
@@ -76,7 +76,7 @@ export default {
           yAxis: [
             {
               type: 'value',
-              name: '下载数量',
+              name: 'rank',
               position: 'left'
             },
             {
@@ -91,14 +91,14 @@ export default {
             {
 
               showSymbol: false,
-              name: '下载数量',
+              name: 'rank',
               type: 'line',
               hoverAnimation: false,
               smooth: true,
               symbolSize: 4,
               encode: {
                 x: 'time',
-                y: '下载数量',
+                y: 'rank',
               },
               yAxisIndex: 0
             },

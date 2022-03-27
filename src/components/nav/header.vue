@@ -3,8 +3,8 @@
     <el-menu theme="dark" :default-active="this.$route.path"
              class="el-menu-demo" background-color="#409EF4" text-color="#FFFFFF" mode="horizontal" @
              select="handleSelect" router>
-      <el-menu-item index="oneTimeLoad">一次加载版</el-menu-item>
-      <el-menu-item index="PageLoad">分页版</el-menu-item>
+<!--      <el-menu-item index="oneTimeLoad">一次加载版</el-menu-item>-->
+      <el-menu-item index="PageLoad">主要表格</el-menu-item>
       <el-menu-item index="tonghuashun">同花顺APP下载数量</el-menu-item>
       <!--    <el-submenu index="3">-->
       <!--      <template slot="title">Projects</template>-->
@@ -14,7 +14,7 @@
       <!--    </el-submenu>-->
       <!--    <el-menu-item index="4">Login</el-menu-item>-->
       <!--    <el-menu-item index="5">Resume</el-menu-item>-->
-      <el-menu-item index="about">About</el-menu-item>
+      <el-menu-item index="about">更新说明</el-menu-item>
     </el-menu>
   </div>
 </template>
